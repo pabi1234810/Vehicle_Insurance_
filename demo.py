@@ -1,3 +1,9 @@
+
+from src.pipline.training_pipeline import TrainPipeline
+
+pipline = TrainPipeline()
+pipline.run_pipeline()
+
 # --------------------------------------------------------------------------------
 # below code is to check the logging config
 # from src.logger import logging
@@ -14,14 +20,9 @@
 # import sys
 
 # try:
-# 	a = 1+'Z'
+#     a = 1+'Z'
 # except Exception as e:
-# 	logging.info(e)
-# 	raise MyException(e, sys) from e
+#     logging.info(e)
+#     raise MyException(e, sys) from e
 
 # ------------------------------------------------------------------------------------
-
-from src.pipline.training_pipeline import TrainPipeline
-
-pipline = TrainPipeline()
-pipline.run_pipeline()
